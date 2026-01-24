@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль пользователя</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Профиль</h1></header>
+<div class="container">
+    <img src="" alt="Аватар" id="avatarImg" class="avatar">
+
+    <form id="profileForm">
+        <input type="text" id="name" placeholder="Имя" required>
+        <input type="email" id="email" placeholder="E‑mail" required>
+        <input type="password" id="password" placeholder="Новый пароль (необязательно)">
+        <input type="file" id="avatar" accept="image/*">
+        <button type="submit">Сохранить изменения</button>
+        <p class="error" id="profileError"></p>
+        <p class="success" id="profileSuccess"></p>
+    </form>
+
+    <button id="deleteBtn" style="background:#e74c3c;">Удалить аккаунт</button>
+    <button id="logoutBtn" style="background:#95a5a6;">Выйти</button>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
